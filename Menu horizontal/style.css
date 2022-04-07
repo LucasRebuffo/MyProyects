@@ -1,14 +1,14 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .material-icons {
-  font-family: 'Material Icons';
+  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
+  font-size: 24px; /* Preferred icon size */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -26,32 +26,31 @@ body{
   -moz-osx-font-smoothing: grayscale;
 
   /* Support for IE. */
-  font-feature-settings: 'liga';
+  font-feature-settings: "liga";
 }
 
-.collapsed{
+.collapsed {
   display: none;
 }
 
-nav{
+nav {
   background-color: black;
   color: white;
   width: 100%;
 }
 
-nav .mobile{
+nav .mobile {
   display: none;
 }
 
-nav .mobile .header{
+nav .mobile .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 10px;
-
 }
 
-nav .mobile .header .more button{
+nav .mobile .header .more button {
   border: none;
   background-color: black;
   color: white;
@@ -59,58 +58,53 @@ nav .mobile .header .more button{
   cursor: pointer;
 }
 
-
-
 /* Esta parte depende y se puede cambiar */
-nav .logo{
+nav .logo {
   min-width: 250px;
 }
 
-nav a{
+nav a {
   color: white;
   text-decoration: none;
   display: block;
   padding: 20px 25px;
 }
 
-nav a:hover{
+nav a:hover {
   color: black;
   background-color: #00c3ff;
 }
 
-nav .desktop{
+nav .desktop {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
 }
 
-
 nav .desktop .primary,
-nav .desktop .secondary{
+nav .desktop .secondary {
   display: flex;
 }
 
-nav .desktop .secondary.mini{
+nav .desktop .secondary.mini {
   display: none;
 }
 
 @media screen and (max-width: 915px) {
-
-  nav .logo{
+  nav .logo {
     min-width: 100px;
   }
 
-  nav .secondary.full{
+  nav .secondary.full {
     display: none;
   }
 
-  nav .secondary.mini{
+  nav .secondary.mini {
     display: block !important;
-
   }
 
-  nav .secondary.mini .submenu{
+  nav .secondary.mini .submenu {
     position: absolute;
     display: none;
     background-color: black;
@@ -118,19 +112,17 @@ nav .desktop .secondary.mini{
     right: 0;
   }
 
-  nav .secondary.mini:hover .submenu{
+  nav .secondary.mini:hover .submenu {
     display: block;
   }
 }
 
-@media screen and (max-width:560px) {
-
-  nav .desktop{
+@media screen and (max-width: 560px) {
+  nav .desktop {
     display: none;
   }
 
-  nav .mobile{
+  nav .mobile {
     display: block;
   }
-  
 }

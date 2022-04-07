@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Menu vertical responsive</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-</head>
-<body>
-  <nav>
-    <div class="mobile">
-
-      <div class="header">
-        <div class="logo"><span class="material-icons">
-          rocket_launch
-          </span></div>
-        <div class="more">
-          <button id="bMore">
-            <span class="material-icons">
-              menu
-            </span>
-          </button>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Menu vertical responsive</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="mobile">
+        <div class="header">
+          <div class="logo">
+            <span class="material-icons"> rocket_launch </span>
+          </div>
+          <div class="more">
+            <button id="bMore">
+              <span class="material-icons"> menu </span>
+            </button>
+          </div>
         </div>
-      </div>
 
         <div id="links" class="links collapsed">
           <a href="#">About us</a>
@@ -34,20 +33,19 @@
           <a href="#">Sign up</a>
           <a href="#">Login</a>
         </div>
-
-    </div>  
+      </div>
 
       <div class="desktop">
-        <div class="logo"><span class="material-icons">
-          rocket_launch
-          </span></div>
-        
+        <div class="logo">
+          <span class="material-icons"> rocket_launch </span>
+        </div>
+
         <div class="primary">
           <a href="#">About us</a>
           <a href="#">Services</a>
           <a href="#">Contact</a>
         </div>
-        
+
         <div class="secondary full">
           <a href="#">Search</a>
           <a href="#">Sign up</a>
@@ -55,7 +53,6 @@
         </div>
 
         <div class="secondary mini">
-
           <a href="#" class="mores">More</a>
 
           <div class="submenu">
@@ -63,25 +60,17 @@
             <a href="">Sign up</a>
             <a href="">Login</a>
           </div>
-
         </div>
-
       </div>
+    </nav>
 
-    
-  </nav>
+    <script>
+      const bMore = document.getElementById("bMore");
+      const links = document.getElementById("links");
 
-
-  <script>
-    const bMore = document.getElementById('bMore')
-    const links = document.getElementById('links')
-
-    bMore.addEventListener('click',(e)=>{
-      links.classList.toggle('collapsed')  
-    })
-
-  </script>
-
-
-</body>
-</html></html>
+      bMore.addEventListener("click", (e) => {
+        links.classList.toggle("collapsed");
+      });
+    </script>
+  </body>
+</html>
